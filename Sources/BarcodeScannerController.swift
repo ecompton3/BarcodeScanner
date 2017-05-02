@@ -208,6 +208,7 @@ open class BarcodeScannerController: UIViewController {
     setupFrames()
     infoView.setupFrames()
     headerView.isHidden = !isBeingPresented
+    headerView.label.backgroundColor = Title.backgroundColor
   }
 
   open override func viewDidAppear(_ animated: Bool) {
