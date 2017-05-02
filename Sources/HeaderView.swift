@@ -12,8 +12,6 @@ class HeaderView: UIView {
   /// Title label.
   lazy var label: UILabel = {
     let label = UILabel()
-    label.backgroundColor = Title.backgroundColor
-    label.tintColor = Title.backgroundColor
     label.text = Title.text
     label.font = Title.font
     label.textColor = Title.color
@@ -74,6 +72,7 @@ class HeaderView: UIView {
     label.frame = CGRect(
       x: 0, y: ((frame.height - labelHeight) / 2) + padding,
       width: frame.width, height: labelHeight)
+    label.backgroundColor = Title.backgroundColor
   }
 
   // MARK: - Actions
