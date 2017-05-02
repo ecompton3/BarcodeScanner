@@ -13,6 +13,7 @@ class HeaderView: UIView {
   lazy var label: UILabel = {
     let label = UILabel()
     label.backgroundColor = Title.backgroundColor
+    label.tintColor = Title.backgroundColor
     label.text = Title.text
     label.font = Title.font
     label.textColor = Title.color
