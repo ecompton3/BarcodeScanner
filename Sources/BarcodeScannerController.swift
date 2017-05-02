@@ -179,7 +179,7 @@ open class BarcodeScannerController: UIViewController {
     videoPreviewLayer?.videoGravity = AVLayerVideoGravityResize
 
     view.backgroundColor = UIColor.black
-    
+
     guard let videoPreviewLayer = videoPreviewLayer else {
       return
     }
