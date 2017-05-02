@@ -15,9 +15,9 @@ class HeaderView: UIView {
     label.text = Title.text
     label.font = Title.font
     label.textColor = Title.color
+    label.backgroundColor = Title.backgroundColor
     label.numberOfLines = 1
     label.textAlignment = .center
-
     return label
   }()
 
@@ -72,7 +72,6 @@ class HeaderView: UIView {
     label.frame = CGRect(
       x: 0, y: ((frame.height - labelHeight) / 2) + padding,
       width: frame.width, height: labelHeight)
-    label.backgroundColor = Title.backgroundColor
   }
 
   // MARK: - Actions
