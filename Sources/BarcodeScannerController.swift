@@ -179,7 +179,6 @@ open class BarcodeScannerController: UIViewController {
     videoPreviewLayer?.videoGravity = AVLayerVideoGravityResize
 
     view.backgroundColor = UIColor.black
-    self.navigationController?.navigationBar.barTintColor = Title.backgroundColor
     guard let videoPreviewLayer = videoPreviewLayer else {
       return
     }
